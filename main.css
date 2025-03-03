@@ -1,0 +1,203 @@
+/**/
+body {
+   font-family: Degular, Arial, sans-serif; 
+   background-color:#EBECEE;
+   font-size: 24pt;
+}
+
+h1, h2, h3, h4, h5, p, a {
+    margin-top:0;
+    color: #031A3A;
+}
+
+p {
+    font-size: 1em;
+    margin-bottom: 1.5em;
+}
+
+h1 {
+    font-size: 3em;
+    
+}
+
+h2 {
+    font-size: 2.5em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+a{
+    font-size: 1em;
+    color: 
+    text-decoration-thickness: 
+    text-decoration-color: 
+}
+
+a:hover {
+    text-decoration-color: 
+}
+
+#rectangle {
+    width: 72px;
+    height: 486px;
+    background: rgba(204, 226, 255, 1);
+}
+
+/* This makes the image* responsive. */
+img {
+    height: auto;
+    max-width: 100%;
+}
+/* ------ Main Content Area Styles ------*/
+main {
+    margin: 0 auto;
+    max-width: 60vw;
+}
+
+main section {
+    background-color: 
+    padding: 
+    margin-bottom: 
+    border-radius: 
+    box-shadow: 
+}
+
+/* ----- Hero Section Styling ---- */
+
+#container {
+    position: relative;
+    background-image: linear-gradient(180deg, rgba(235, 240, 250, 1), rgba(235, 236, 238, 1), rgba(255, 231, 229, 0.34));
+    background-size: 100%;
+    min-height: 100vh;
+}
+
+section.hero-area {
+    /* max-width: 60vh; */
+    display: grid;
+    position: relative;
+    z-index: 1;
+    grid-template-columns: 1fr 0.5fr;
+    grid-template-rows: auto;
+    gap: 1em;
+    height: 90vh;
+    margin-bottom: 1rem;
+    align-items: center; 
+    background-blend-mode: multiply;
+    background: url(../img/lines.png);
+    background-size: cover; 
+    background-position: center;  
+    background-repeat: no-repeat; 
+
+}
+.video-container {
+    display: inline-block;
+    width: 32%; 
+    height: 76px; 
+    overflow: hidden; 
+    position: relative;
+}
+
+video {
+    width: 100%; 
+    height: auto; 
+    object-fit: cover; 
+    object-position: center;
+}
+
+.hero-headline {
+    display: flex; 
+    flex-direction: row;
+    gap: 20px; 
+    align-items: center;
+    flex-wrap: nowrap;
+    
+}
+
+.title {
+    text-transform: uppercase; 
+    padding: 
+    width: auto; 
+    display: inline-block;
+    flex: 1;
+}
+
+
+
+.cta-main {
+    padding: 
+    background-color: 
+    color:
+    display: 
+    text-decoration: 
+}
+
+/* ------ Navigation Styles -------- */
+  
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1;
+    align-items: center; 
+    width: 100%;
+    z-index: 50;
+}
+
+.logo {
+    display: block;
+    grid-column: 1; 
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end; 
+    grid-column: 2; 
+    gap: 1em;
+}
+
+.nav-line {
+    width: 617px;
+    height: 1px;
+    background-color: rgba(255, 128, 48, 1);
+}
+
+.hero-discription {
+    background: url(../img/dots.png);
+    width: 14.25rem;
+    height: 14.25rem;
+    background-position: center;  
+
+}
+
+nav a {
+    display:
+    color: 
+    background-color: 
+    font-size: ;
+    text-decoration: none;
+    padding: 
+}
+
+nav a:hover {
+    color: 
+
+}
+
+/* --------- Header Grid Style ---------- */
+.main-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+}
+/* --------- Main Grid Style ---------- */
+.main-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, auto);
+    grid-gap: 1em;
+}
+
+#works {
+    grid-column: 1/4;
+}
+
