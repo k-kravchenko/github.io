@@ -1,17 +1,24 @@
 /**/
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Sofia+Sans:wght@400;500;700&display=swap');
+
 body {
-   font-family: Degular, Arial, sans-serif; 
+   font-family: 'Sofia Sans', Arial, sans-serif; 
    background-color:#EBECEE;
    font-size: 24pt;
+   margin: 0;
 }
 
-h1, h2, h3, h4, h5, p, a {
+h1, h2, h3 {
+    font-family: 'DM Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p, a {
     margin-top:0;
     color: #031A3A;
 }
 
 p {
-    font-size: 1em;
+    font-size: 1.5rem;
     margin-bottom: 1.5em;
 }
 
@@ -25,14 +32,31 @@ h2 {
 }
 
 h3 {
-    font-size: 1.5em;
+    font-size: 2.25rem;
 }
 
-a{
+h4 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #808080;
+}
+
+h5 {
+    font-size: 0.8em;
+}
+
+h6 {
+    font-size: 1.24rem;
+}
+
+
+
+
+a {
     font-size: 1em;
-    color: 
-    text-decoration-thickness: 
-    text-decoration-color: 
+    color: ;
+    text-decoration-thickness: ;
+    text-decoration-color: ;
 }
 
 a:hover {
@@ -52,17 +76,9 @@ img {
 }
 /* ------ Main Content Area Styles ------*/
 main {
-    margin: 0 auto;
-    max-width: 60vw;
+    padding: 0 8rem 0 8rem;
 }
 
-main section {
-    background-color: 
-    padding: 
-    margin-bottom: 
-    border-radius: 
-    box-shadow: 
-}
 
 /* ----- Hero Section Styling ---- */
 
@@ -71,6 +87,7 @@ main section {
     background-image: linear-gradient(180deg, rgba(235, 240, 250, 1), rgba(235, 236, 238, 1), rgba(255, 231, 229, 0.34));
     background-size: 100%;
     min-height: 100vh;
+    margin-bottom: 5.6rem;
 }
 
 section.hero-area {
@@ -83,6 +100,7 @@ section.hero-area {
     gap: 1em;
     height: 90vh;
     margin-bottom: 1rem;
+    padding: 0 8rem 0 8rem;
     align-items: center; 
     background-blend-mode: multiply;
     background: url(../img/lines.png);
@@ -99,12 +117,6 @@ section.hero-area {
     position: relative;
 }
 
-video {
-    width: 100%; 
-    height: auto; 
-    object-fit: cover; 
-    object-position: center;
-}
 
 .hero-headline {
     display: flex; 
@@ -117,7 +129,6 @@ video {
 
 .title {
     text-transform: uppercase; 
-    padding: 
     width: auto; 
     display: inline-block;
     flex: 1;
@@ -125,58 +136,41 @@ video {
 
 
 
-.cta-main {
-    padding: 
-    background-color: 
-    color:
-    display: 
-    text-decoration: 
+.main h2 {
+    text-transform: uppercase; 
 }
 
 /* ------ Navigation Styles -------- */
   
 header {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1;
+    grid-template-columns: 1fr 0.5fr;
     align-items: center; 
-    width: 100%;
+    width: auto;
     z-index: 50;
+    padding: 4rem 4rem 4rem 8rem;
 }
 
 .logo {
     display: block;
-    grid-column: 1; 
 }
 
 nav {
     display: flex;
-    justify-content: flex-end; 
-    grid-column: 2; 
     gap: 1em;
+    border-top: 1px solid rgba(255, 128, 48, 1);
+    padding-top: 1rem;
 }
 
-.nav-line {
-    width: 617px;
-    height: 1px;
-    background-color: rgba(255, 128, 48, 1);
-}
 
 .hero-discription {
-    background: url(../img/dots.png);
-    width: 14.25rem;
-    height: 14.25rem;
-    background-position: center;  
-
+    position: relative;
+  
 }
 
 nav a {
-    display:
-    color: 
-    background-color: 
-    font-size: ;
-    text-decoration: none;
-    padding: 
+    text-decoration: ;
+    padding: ;
 }
 
 nav a:hover {
@@ -184,20 +178,71 @@ nav a:hover {
 
 }
 
-/* --------- Header Grid Style ---------- */
-.main-grid {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto;
+.background {
+    background: url(../img/dots.png);
+    width: 14.25rem;
+    height: 14.25rem;
+    position: absolute;
+    left: 336px;
+    top: -62px;
+    z-index: -1;
 }
+
+
+
 /* --------- Main Grid Style ---------- */
-.main-grid {
+.case-study {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(4, auto);
+    grid-template-columns: 1fr 0.5fr;
     grid-gap: 1em;
 }
 
-#works {
-    grid-column: 1/4;
+.uph {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    margin: 0;
 }
 
+.case-study h6 {
+    display: inline-block;
+    align-items: center;
+    color: rgba(0, 74, 173, 1);
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 8px;
+    background: #D8E6F8;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+} 
+
+button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: #031A3A;
+    font-family: "Sofia Sans";
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    padding: 0.75rem 1.5rem 0.75rem 1.5rem;
+    border-radius: 8px;
+    border: 3px solid #FF8030;
+    background: rgba(255, 231, 229, 0.54);
+    background-position: right 3em bottom 10px;
+}
+
+footer {
+    display: block;
+    p
+}
+.case-study-header {
+    background-color: rgba(204, 226, 255, 1);
+}
+
+.hero-case-study {
+    padding-left: 8rem;
+    background-color: rgba(204, 226, 255, 1);
+}
