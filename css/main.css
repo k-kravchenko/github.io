@@ -1,11 +1,17 @@
 /**/
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Sofia+Sans:wght@400;500;700&display=swap');
 
+html, body {
+    overflow-x: hidden;
+    max-width: 100vw;
+}
+
 body {
    font-family: 'Sofia Sans', Arial, sans-serif; 
    background-color:#EBECEE;
    font-size: 24pt;
    margin: 0;
+   width:;
 }
 
 h1, h2, h3 {
@@ -54,20 +60,15 @@ h6 {
 
 a {
     font-size: 1em;
-    color: ;
-    text-decoration-thickness: ;
+    text-decoration: none;
     text-decoration-color: ;
 }
 
 a:hover {
-    text-decoration-color: 
+    text-decoration: underline ;
+    tex
 }
 
-#rectangle {
-    width: 72px;
-    height: 486px;
-    background: rgba(204, 226, 255, 1);
-}
 
 /* This makes the image* responsive. */
 img {
@@ -77,6 +78,8 @@ img {
 /* ------ Main Content Area Styles ------*/
 main {
     padding: 0 8rem 0 8rem;
+    box-sizing: border-box;
+    max-width: 100%;
 }
 
 
@@ -112,7 +115,7 @@ section.hero-area {
 .video-container {
     display: inline-block;
     width: 32%; 
-    height: 76px; 
+    height: 88px; 
     overflow: hidden; 
     position: relative;
 }
@@ -132,6 +135,7 @@ section.hero-area {
     width: auto; 
     display: inline-block;
     flex: 1;
+    font-style: normal;
 }
 
 
@@ -143,12 +147,13 @@ section.hero-area {
 /* ------ Navigation Styles -------- */
   
 header {
+    box-sizing: border-box;
     display: grid;
     grid-template-columns: 1fr 0.5fr;
     align-items: center; 
-    width: auto;
+    max-width: 100%;
     z-index: 50;
-    padding: 4rem 4rem 4rem 8rem;
+    padding: 4rem 8rem 4rem 8rem;
 }
 
 .logo {
@@ -191,10 +196,12 @@ nav a:hover {
 
 
 /* --------- Main Grid Style ---------- */
-.case-study {
+.case-study-1 {
     display: grid;
     grid-template-columns: 1fr 0.5fr;
     grid-gap: 1em;
+    margin-bottom: 2rem;
+    justify-items: start;
 }
 
 .uph {
@@ -205,7 +212,17 @@ nav a:hover {
     margin: 0;
 }
 
-.case-study h6 {
+.rectangle-uph {
+    width: 72px;
+    height: 486px;
+    background: rgba(204, 226, 255, 1);
+}
+
+.works h3{
+    margin-bottom: 1rem;
+}
+
+.case-study-1 h6 {
     display: inline-block;
     align-items: center;
     color: rgba(0, 74, 173, 1);
@@ -214,13 +231,19 @@ nav a:hover {
     border-radius: 8px;
     background: #D8E6F8;
     padding: 0.5rem 1rem 0.5rem 1rem;
+    margin-bottom: 1rem;
 } 
+
+.works p {
+    margin-bottom: 1.5rem;
+}
 
 button {
     display: inline-flex;
     justify-content: center;
     align-items: center;
     color: #031A3A;
+    background: transparent;
     font-family: "Sofia Sans";
     font-size: 1.5rem;
     font-style: normal;
@@ -230,14 +253,66 @@ button {
     padding: 0.75rem 1.5rem 0.75rem 1.5rem;
     border-radius: 8px;
     border: 3px solid #FF8030;
-    background: rgba(255, 231, 229, 0.54);
-    background-position: right 3em bottom 10px;
+    box-shadow: 12px 12px 2px 1px rgba(255, 231, 229, 0.54);
+}
+
+.case-study-2 {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-gap: 1em;
+    margin-bottom: 2rem;
+    margin-top: 4rem;
+    justify-items: end;
+}
+
+.shovkovo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    margin: 0;
+}
+
+.case-study-2 h6 {
+    display: inline-block;
+    align-items: center;
+    color: rgba(18, 18, 18, 1);
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 8px;
+    background: rgba(185, 185, 185, 1);
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    margin-bottom: 1rem;
+} 
+
+.rectangle-shovkovo {
+    width: 72px;
+    height: 486px;
+    background: rgba(18, 18, 18, 1);
 }
 
 footer {
-    display: block;
-    p
+    margin-top: 8.5rem;
+    display: table;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
+   
+footer h2 {
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+
+footer h6{
+    text-transform: uppercase;
+}
+
+footer img {
+    padding: 0 1rem 0 1rem;
+    margin: 1.5rem 0 1.5rem 0;
+}
+
 .case-study-header {
     background-color: rgba(204, 226, 255, 1);
 }
