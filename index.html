@@ -15,11 +15,14 @@
                 <a class=logo href="index.html">
                     <img src="img/kateryna-kravchenko-logo.png" alt="A personal logo" width="254" height="32">
                 </a>
-                <nav>
-                    <a href="#home">Home</a>
-                    <a href="#work">Work</a>
+                <nav class="topnav" id="myTopnav">
+                    <a href="#index.html">Home</a>
+                    <a href="#works">Works</a>
                     <a href="#about">About</a>
                     <a href="#contact">Contact</a>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
+                      </a>
                 </nav>
             </header>
         
@@ -46,12 +49,11 @@
             </section>
         </div>
          
-            <main class="works">
+            <main id="works" class="works">
                 <h2>Works</h2>
                 <section class="case-study-1">
                     <figure class="uph">
-                        <div class="rectangle-uph"></div>
-                        <img src="img/uph-cs.png" alt="A collage for the hero section" width="760" height="486">
+                        <img src="img/uph-cover.png" alt="A collage for the hero section" width="760" height="486">
                     </figure>
                     <div>
                     <h4>UX/UI Designer, Low-Code Developer</h4>
@@ -59,7 +61,7 @@
                     <h6>UI Design</h6>
                     <h6>UI Design</h6>
                     <p>Redesigned and developed a website for a mental and physical health service using Wix and JavaScript. Focused on improving visual aesthetics, enhancing user experience, and creating new tools to better showcase services</p>
-                    <button>Case Study</button>
+                    <button> <a href="uph-case-study.html">Case Study</a></button>
                 </div>
                 </section>
 
@@ -75,8 +77,7 @@
                     <button>Case Study</button>
                 </div>
                 <figure class="shovkovo">
-                    <img src="img/shovkovo.png" alt="A logo of Shovkovo brand" width="760" height="486">
-                    <div class="rectangle-shovkovo"></div>
+                    <img src="img/shovkovo-cover.png" alt="A logo of Shovkovo brand" width="760" height="486">
                 </figure>
                 </section>
 
