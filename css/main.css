@@ -402,6 +402,7 @@ footer img {
 
     footer img {
         margin: 0 0 1rem 0;
+    }
 
     .nav-links {
         display: none;
@@ -432,7 +433,7 @@ footer img {
 @media (max-width: 650px) {
 
     #container {
-        min-height: 86vh;
+        min-height: 78vh;
     }
 
   section.hero-area {
@@ -554,14 +555,294 @@ footer img {
 
 
 /* --------- Case Study Style ---------- */
-.case-study-header {
+.case-study-header-uph {
     background-color: rgba(204, 226, 255, 1);
 }
 
-section.hero-case-study {
+section.hero-case-study-uph {
     display: grid;
-    grid-template-columns: 1fr 0.5fr;
+    grid-template-columns: 1fr 0.75fr;
+    grid-template-rows: auto;
+    gap: 1em;
     align-items: center;
+    place-items: center;
     max-width: 100%;
     padding: 4rem 8rem 4rem 8rem;
+    background-color: rgba(204, 226, 255, 1);
+    height: 90vh;
+    margin-bottom: 4rem;
+    padding: 0 8rem 0 8rem;
 }
+
+.project-name h4 {
+    color: #031A3A;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+
+.intro {
+    display: grid;
+    grid-template-columns: 1fr 0.75fr;
+    gap: 3rem;
+    margin-bottom: 4rem;
+}
+
+.full-width-bg {
+    background-color: rgba(223, 227, 237, 1);
+    width: 100%;
+    position: relative;
+}
+
+.video-section {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh;
+    width: fit-content;
+    margin: 0 8rem;
+    margin-bottom: 4rem;
+}
+
+.video-section video {
+
+    max-width: 1253px;
+    height: auto;
+    display: block;
+}
+
+.context {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.statement {
+    display: block;
+    background-color: rgba(223, 227, 237, 1);
+    padding: 8rem 8rem;
+    margin-bottom: 4rem;
+}
+
+.statement h3{
+    text-align: center;
+}
+
+.problem {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.old{
+    display: block;
+    background-color: rgba(223, 227, 237, 1);
+    padding: 8rem 8rem;
+    margin-bottom: 4rem;
+}
+
+.old h3{
+    text-align: center;
+}
+
+.old figure {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
+.uph-home{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.research {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.persona{
+    display: block;
+    background-color: rgba(223, 227, 237, 1);
+    padding: 8rem 8rem;
+    margin-bottom: 4rem;
+}
+
+.persona h3{
+    text-align: center;
+}
+
+.persona figure {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
+.analysis {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.moodboard {
+    display: block;
+    background-color: rgba(223, 227, 237, 1);
+    padding: 8rem 8rem;
+    margin-bottom: 4rem;
+}
+
+.moodboard h3 {
+    text-align: center;
+}
+
+.design {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.redesign{
+    display: block;
+    background-color: rgba(223, 227, 237, 1);
+    padding: 8rem 2rem;
+    margin-bottom: 4rem;
+}
+
+.redesign h3{
+    text-align: center;
+}
+
+.redesign figure {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+
+.spesialist{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.result {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.takeaways {
+    display: block;
+    background-color: rgba(223, 227, 237, 1);
+    padding: 8rem 8rem;
+    margin-bottom: 4rem;
+}
+
+.takeaways h3 {
+    text-align: center;
+}
+
+.page-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+    border-bottom: 1px solid rgba(3, 26, 58, 1);
+}
+
+.navigation {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.prev {
+    cursor: pointer;
+    color: #555;
+    transition: color 0.3s ease-in-out;
+}
+
+.next-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+}
+
+.next {
+    cursor: pointer;
+    color: #555;
+    transition: color 0.3s ease-in-out;
+}
+
+.prev:hover, .next:hover {
+    color: #000;
+}
+
+.next-section h3 {
+    margin-top: 0.5rem;
+    font-weight: bold;
+}
+
+.implementation {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.case-study-header-sh {
+    background-color: rgba(222, 222, 222, 1);
+}
+
+section.hero-case-study-shovkovo {
+    display: grid;
+    grid-template-columns: 1fr 0.75fr;
+    grid-template-rows: auto;
+    gap: 1em;
+    align-items: center;
+    place-items: center;
+    max-width: 100%;
+    padding: 4rem 8rem 4rem 8rem;
+    background-color: rgba(222, 222, 222, 1);
+    height: 90vh;
+    margin-bottom: 4rem;
+    padding: 0 8rem 0 8rem;
+}
+
+.ideation{
+        display: block;
+        background-color: rgba(223, 227, 237, 1);
+        padding: 8rem 2rem;
+        margin-bottom: 4rem;
+    }
+    
+.ideation h3{
+    text-align: center;
+ }
+    
+ .ideation figure {
+        display: flex;
+        justify-items: center;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+        gap: 1.5rem;
+    }
