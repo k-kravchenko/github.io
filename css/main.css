@@ -160,7 +160,7 @@ section.hero-area {
     gap: 1em;
     height: 90vh;
     margin-bottom: 1rem;
-    padding: 0 8rem 0 8rem;
+    padding: 0 8rem 1rem 8rem;
     align-items: center;
     background-blend-mode: multiply;
     background: url(../img/lines.png);
@@ -386,11 +386,6 @@ footer img {
         height: auto;
     }
 
-    #container {
-        min-height: 84vh;
-        margin-bottom: 2rem;
-    }
-
     .case-study-1,
     .case-study-2 {
         display: block;
@@ -454,10 +449,6 @@ footer img {
         display: none;
     }
 
-    #container {
-        min-height: 86vh;
-    }
-
     section.hero-area {
         padding: 0 4rem 0 4rem;
     }
@@ -507,6 +498,10 @@ footer img {
 
 @media (max-width: 420px) {
 
+    #container {
+        min-height: 64vh;
+    }
+
     .logo {
         width: 75%;
     }
@@ -521,10 +516,6 @@ footer img {
 
     .works {
         padding: 0 1.5rem;
-    }
-
-    #container {
-        min-height: 68vh;
     }
 
     h1 {
