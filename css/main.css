@@ -503,7 +503,6 @@ footer img {
 @media (max-width: 420px) {
 
     #container {
-        min-height: 70vh;
         margin-bottom: 2rem;
     }
 
