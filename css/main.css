@@ -442,7 +442,7 @@ footer img {
 @media (max-width: 650px) {
 
     #container {
-        min-height: 64vh;
+        min-height: 90vh;
         }
 
     .humburger-icon {
@@ -553,12 +553,6 @@ footer img {
     footer img {
         width: 10%;
         padding: 0 0.5rem 0 0.5rem;
-    }
-}
-
-@media (max-width: 267px) {
-    #container {
-        min-height: 70vh;
     }
 }
 
