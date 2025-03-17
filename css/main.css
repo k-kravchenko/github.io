@@ -290,7 +290,7 @@ nav {
     margin-bottom: 1.5rem;
 }
 
-button {
+.button {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -308,7 +308,7 @@ button {
     box-shadow: 12px 12px 2px 1px rgba(255, 231, 229, 0.54)
 }
 
-button:hover {
+.button:hover {
     background: rgba(255, 128, 48, 1);
 }
 
@@ -488,7 +488,7 @@ footer img {
         font-size: 1rem;
     }
 
-    button {
+    .button {
         font-size: 1.2rem;
     }
 
@@ -545,13 +545,8 @@ footer img {
         font-size: 0.6rem;
     }
 
-    button {
+    .button {
         font-size: 0.8rem;
-    }
-
-    p {
-        font-size: 0.8rem;
-        line-height: 1.2;
     }
 
     footer img {
