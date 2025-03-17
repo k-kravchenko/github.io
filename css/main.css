@@ -107,6 +107,7 @@ h6 {
     flex-direction: column;
     align-items: flex-start;
     gap: 1.5rem;
+    text-decoration: none;
 }
 
 .resume {
@@ -561,6 +562,13 @@ footer img {
     footer img {
         width: 10%;
         padding: 0 0.5rem 0 0.5rem;
+    }
+}
+
+@media (max-width: 267px) {
+
+    #container {
+        min-height: 70vh;
     }
 }
 
