@@ -498,10 +498,6 @@ footer img {
 
 @media (max-width: 420px) {
 
-    #container {
-        min-height: 64vh;
-    }
-
     .logo {
         width: 75%;
     }
@@ -553,13 +549,6 @@ footer img {
     footer img {
         width: 10%;
         padding: 0 0.5rem 0 0.5rem;
-    }
-}
-
-@media (max-width: 267px) {
-
-    #container {
-        min-height: 70vh;
     }
 }
 
